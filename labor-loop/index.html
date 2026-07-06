@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>労務ループ | トマトハウス作業ボード</title>
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --panel: #ffffff;
+      --ink: #1f2a24;
+      --muted: #66736b;
+      --line: #d9dfd8;
+      --brand: #2f6b4f;
+      --brand-dark: #24543e;
+      --gray: #eef1ee;
+      --blue: #1565c0;
+      --blue-bg: #e7f0fb;
+      --green: #2e7d32;
+      --green-bg: #e7f4e8;
+      --red: #b3261e;
+      --red-bg: #fde8e6;
+      --shadow: 0 10px 30px rgba(27, 43, 33, 0.08);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    button, input, textarea {
+      font: inherit;
+    }
+
+    button {
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    button:hover { border-color: #9fac9f; }
+    button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 3px solid rgba(47, 107, 79, 0.22);
+      outline-offset: 2px;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 14px 40px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 14px 0 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .date-pill {
+      white-space: nowrap;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(310px, 420px) minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin: 12px 0 6px;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+      width: 100%;
+      min-height: 44px;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    textarea {
+      min-height: 112px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 120px;
+      gap: 10px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      padding: 0 14px;
+    }
+
+    .primary:hover {
+      background: var(--brand-dark);
+      border-color: var(--brand-dark);
+    }
+
+    .danger {
+      border-color: #efb0aa;
+      color: var(--red);
+      background: #fff;
+      font-weight: 700;
+      padding: 0 12px;
+    }
+
+    .muted-button {
+      padding: 0 12px;
+      color: var(--muted);
+    }
+
+    .area-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .area-buttons button {
+      padding: 0 8px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .house-picker {
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+      background: #fbfcfb;
+    }
+
+    .picker-area {
+      margin-bottom: 12px;
+    }
+
+    .picker-area:last-child {
+      margin-bottom: 0;
+    }
+
+    .house-checks {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .house-check {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 36px;
+      padding: 5px 6px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .house-check input {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+    }
+
+    .task-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .task-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: #fff;
+    }
+
+    .task-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .task-title {
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    .task-meta {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .task-actions {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .icon-button {
+      min-width: 44px;
+      padding: 0 9px;
+      font-weight: 800;
+    }
+
+    .empty {
+      color: var(--muted);
+      background: #fbfcfb;
+      border: 1px dashed #bfc8bf;
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .summary-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+      background: #fff;
+    }
+
+    .summary-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .summary-value {
+      display: block;
+      margin-top: 2px;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .board-area {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+      background: #fbfcfb;
+    }
+
+    .board-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-weight: 900;
+    }
+
+    .board-count {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .house-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+      gap: 7px;
+    }
+
+    .house-cell {
+      position: relative;
+      min-height: 58px;
+      padding: 8px;
+      border: 2px solid transparent;
+      border-radius: var(--radius);
+      text-align: left;
+      background: var(--gray);
+      color: var(--ink);
+    }
+
+    .house-cell[disabled] {
+      cursor: default;
+      opacity: 0.48;
+    }
+
+    .house-no {
+      display: block;
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+
+    .house-status {
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .house-cell.status-working {
+      background: var(--blue-bg);
+      border-color: rgba(21, 101, 192, 0.35);
+    }
+
+    .house-cell.status-working .house-status { color: var(--blue); }
+
+    .house-cell.status-done {
+      background: var(--green-bg);
+      border-color: rgba(46, 125, 50, 0.35);
+    }
+
+    .house-cell.status-done .house-status { color: var(--green); }
+
+    .house-cell.is-late {
+      background: var(--red-bg);
+      border-color: var(--red);
+    }
+
+    .late-mark {
+      position: absolute;
+      top: 5px;
+      right: 6px;
+      color: var(--red);
+      font-weight: 900;
+    }
+
+    .generated {
+      width: 100%;
+      min-height: 260px;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+    }
+
+    .copy-status {
+      min-height: 22px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .small-note {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        display: block;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+        margin-top: 12px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .board {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 12px 10px 28px;
+      }
+
+      section {
+        padding: 12px;
+      }
+
+      .form-row,
+      .summary-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .area-buttons,
+      .house-checks {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .house-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .task-head {
+        display: block;
+      }
+
+      .task-actions {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>労務ループ</h1>
+        <p class="subtitle">トマトハウス栽培の本日割当・LINE指示・進捗確認</p>
+      </div>
+      <div class="top-actions">
+        <div class="date-pill" id="todayLabel"></div>
+        <button class="danger" id="resetBtn" type="button">今日をリセット</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <div>
+        <section aria-labelledby="formTitle">
+          <h2 id="formTitle">割当入力</h2>
+          <form id="taskForm">
+            <input type="hidden" id="editingId">
+            <label for="workInput">作業内容</label>
+            <input id="workInput" type="text" placeholder="例: 誘引 / 収穫 / 摘葉 / 液肥" required>
+
+            <div class="form-row">
+              <div>
+                <label for="assigneeInput">担当者</label>
+                <input id="assigneeInput" type="text" placeholder="例: 田中 / パートA" required>
+              </div>
+              <div>
+                <label for="minutesInput">目安時間</label>
+                <input id="minutesInput" type="number" min="1" step="1" placeholder="分" required>
+              </div>
+            </div>
+
+            <label for="memoInput">一言メモ・注意</label>
+            <textarea id="memoInput" placeholder="例: 茎を折らないように、低い位置から順番に"></textarea>
+
+            <label>エリア一括選択</label>
+            <div class="area-buttons" id="areaButtons"></div>
+            <div class="button-row">
+              <button class="muted-button" id="selectAllBtn" type="button">全棟選択</button>
+              <button class="muted-button" id="clearSelectionBtn" type="button">選択解除</button>
+            </div>
+
+            <label>対象ハウス</label>
+            <div class="house-picker" id="housePicker"></div>
+            <p class="small-note" id="selectionSummary">0棟選択中</p>
+
+            <div class="button-row">
+              <button class="primary" type="submit" id="saveTaskBtn">タスクを追加</button>
+              <button class="muted-button" type="button" id="cancelEditBtn" hidden>編集をやめる</button>
+            </div>
+          </form>
+        </section>
+
+        <section aria-labelledby="taskListTitle">
+          <h2 id="taskListTitle">本日の割当一覧</h2>
+          <div class="task-list" id="taskList"></div>
+        </section>
+
+        <section aria-labelledby="lineTitle">
+          <h2 id="lineTitle">LINE用テキスト</h2>
+          <div class="button-row">
+            <button class="primary" id="generateLineBtn" type="button">LINE用テキストを生成</button>
+            <button class="muted-button" id="copyLineBtn" type="button">コピー</button>
+          </div>
+          <textarea class="generated" id="lineOutput" readonly placeholder="生成した指示文がここに表示されます"></textarea>
+          <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+        </section>
+      </div>
+
+      <div>
+        <section aria-labelledby="summaryTitle">
+          <h2 id="summaryTitle">進捗ボード</h2>
+          <div class="summary-grid" id="summaryGrid"></div>
+          <div class="board" id="board"></div>
+          <p class="small-note">遅れ判定: タスク追加時刻から目安時間を超え、対象ハウスが完了でない場合に表示します。</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // ハウス住所マスター。号数の追加・削除はこの定数だけを変更する。
+    const HOUSE_MASTER = [
+      { area: "工場前", houses: ["001", "002", "003"] },
+      { area: "梅花", houses: ["005", "006", "007", "008", "009"] },
+      { area: "おぞれ", houses: ["010", "011", "012", "013", "014", "015", "016", "017", "018"] },
+      { area: "上野西", houses: ["019", "020", "021", "022"] },
+      { area: "上野東", houses: ["023", "024", "025", "026"] },
+      { area: "宮枚", houses: ["027", "028", "029", "030", "031", "032", "033", "034", "035"] },
+      { area: "公民館", houses: ["036", "037", "038", "039"] },
+      { area: "垣内上", houses: ["040", "041", "042", "043", "044", "045", "046", "047"] },
+      { area: "垣内中", houses: ["048", "049", "050", "051", "052", "053"] },
+      { area: "垣内下", houses: ["054", "055", "056", "057", "058", "059", "060", "061"] }
+    ];
+
+    const STORAGE_KEY = "laborLoop.v1.today";
+    const STATUS_ORDER = ["not-started", "working", "done"];
+    const STATUS_LABEL = {
+      "unassigned": "割当なし",
+      "not-started": "未着手",
+      "working": "作業中",
+      "done": "完了"
+    };
+
+    const allHouses = HOUSE_MASTER.flatMap(area => area.houses);
+    const houseToArea = new Map(HOUSE_MASTER.flatMap(area => area.houses.map(no => [no, area.area])));
+    const els = {};
+    let state = loadState();
+
+    document.addEventListener("DOMContentLoaded", init);
+
+    function init() {
+      cacheElements();
+      els.todayLabel.textContent = formatToday();
+      renderHousePicker();
+      renderAreaButtons();
+      bindEvents();
+      normalizeBoardState();
+      saveState();
+      renderAll();
+    }
+
+    function cacheElements() {
+      [
+        "todayLabel", "resetBtn", "taskForm", "editingId", "workInput", "assigneeInput",
+        "minutesInput", "memoInput", "areaButtons", "selectAllBtn", "clearSelectionBtn",
+        "housePicker", "selectionSummary", "saveTaskBtn", "cancelEditBtn", "taskList",
+        "generateLineBtn", "copyLineBtn", "lineOutput", "copyStatus", "summaryGrid", "board"
+      ].forEach(id => { els[id] = document.getElementById(id); });
+    }
+
+    // 状態保存。日付が変わった場合は前日の状態を引き継がない。
+    function loadState() {
+      const empty = { date: todayKey(), tasks: [], board: {} };
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return empty;
+        const parsed = JSON.parse(raw);
+        if (!parsed || parsed.date !== todayKey()) return empty;
+        return {
+          date: parsed.date,
+          tasks: Array.isArray(parsed.tasks) ? parsed.tasks : [],
+          board: parsed.board && typeof parsed.board === "object" ? parsed.board : {}
+        };
+      } catch (error) {
+        console.warn("保存データの読み込みに失敗しました", error);
+        return empty;
+      }
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function bindEvents() {
+      els.taskForm.addEventListener("submit", handleTaskSubmit);
+      els.selectAllBtn.addEventListener("click", () => {
+        setSelectedHouses(allHouses);
+        updateSelectionSummary();
+      });
+      els.clearSelectionBtn.addEventListener("click", () => {
+        setSelectedHouses([]);
+        updateSelectionSummary();
+      });
+      els.cancelEditBtn.addEventListener("click", clearForm);
+      els.generateLineBtn.addEventListener("click", () => {
+        els.lineOutput.value = generateLineText();
+        els.copyStatus.textContent = "";
+      });
+      els.copyLineBtn.addEventListener("click", copyLineText);
+      els.resetBtn.addEventListener("click", resetToday);
+      els.housePicker.addEventListener("change", updateSelectionSummary);
+    }
+
+    function renderAll() {
+      renderTaskList();
+      renderSummary();
+      renderBoard();
+      updateSelectionSummary();
+    }
+
+    function renderAreaButtons() {
+      els.areaButtons.innerHTML = "";
+      HOUSE_MASTER.forEach(area => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = area.area;
+        button.title = area.houses.join(", ");
+        button.addEventListener("click", () => {
+          const selected = new Set(getSelectedHouses());
+          area.houses.forEach(no => selected.add(no));
+          setSelectedHouses([...selected]);
+          updateSelectionSummary();
+        });
+        els.areaButtons.appendChild(button);
+      });
+    }
+
+    function renderHousePicker() {
+      els.housePicker.innerHTML = "";
+      HOUSE_MASTER.forEach(area => {
+        const wrap = document.createElement("div");
+        wrap.className = "picker-area";
+
+        const title = document.createElement("h3");
+        title.textContent = `${area.area} (${area.houses.length}棟)`;
+        wrap.appendChild(title);
+
+        const grid = document.createElement("div");
+        grid.className = "house-checks";
+        area.houses.forEach(no => {
+          const label = document.createElement("label");
+          label.className = "house-check";
+
+          const input = document.createElement("input");
+          input.type = "checkbox";
+          input.name = "houses";
+          input.value = no;
+
+          const text = document.createElement("span");
+          text.textContent = no;
+
+          label.append(input, text);
+          grid.appendChild(label);
+        });
+        wrap.appendChild(grid);
+        els.housePicker.appendChild(wrap);
+      });
+    }
+
+    function handleTaskSubmit(event) {
+      event.preventDefault();
+      const houses = getSelectedHouses().sort(compareHouseNo);
+      if (houses.length === 0) {
+        alert("対象ハウスを1棟以上選んでください。");
+        return;
+      }
+
+      const now = Date.now();
+      const task = {
+        id: els.editingId.value || `task-${now}-${Math.random().toString(16).slice(2)}`,
+        work: els.workInput.value.trim(),
+        assignee: els.assigneeInput.value.trim(),
+        minutes: Number(els.minutesInput.value),
+        memo: els.memoInput.value.trim(),
+        houses,
+        createdAt: now
+      };
+
+      if (!task.work || !task.assignee || !Number.isFinite(task.minutes) || task.minutes <= 0) {
+        alert("作業内容、担当者、目安時間を入力してください。");
+        return;
+      }
+
+      const existingIndex = state.tasks.findIndex(item => item.id === task.id);
+      if (existingIndex >= 0) {
+        task.createdAt = state.tasks[existingIndex].createdAt || now;
+        state.tasks.splice(existingIndex, 1, task);
+      } else {
+        state.tasks.push(task);
+      }
+
+      normalizeBoardState();
+      saveState();
+      clearForm();
+      renderAll();
+    }
+
+    function renderTaskList() {
+      els.taskList.innerHTML = "";
+      if (state.tasks.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "empty";
+        empty.textContent = "まだ割当がありません。上のフォームから追加してください。";
+        els.taskList.appendChild(empty);
+        return;
+      }
+
+      state.tasks.forEach(task => {
+        const card = document.createElement("article");
+        card.className = "task-card";
+
+        const head = document.createElement("div");
+        head.className = "task-head";
+
+        const body = document.createElement("div");
+        const title = document.createElement("div");
+        title.className = "task-title";
+        title.textContent = `${task.work} / ${task.assignee}さん`;
+
+        const meta = document.createElement("div");
+        meta.className = "task-meta";
+        meta.textContent = `ハウス ${compressHouseList(task.houses)} ・ ${task.houses.length}棟 ・ 目安 ${formatMinutes(task.minutes, task.houses.length)}`;
+
+        const memo = document.createElement("div");
+        memo.className = "task-meta";
+        memo.textContent = task.memo ? `注意: ${task.memo}` : "注意: なし";
+
+        body.append(title, meta, memo);
+
+        const actions = document.createElement("div");
+        actions.className = "task-actions";
+        const editBtn = document.createElement("button");
+        editBtn.type = "button";
+        editBtn.className = "icon-button";
+        editBtn.textContent = "編集";
+        editBtn.addEventListener("click", () => startEdit(task.id));
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.type = "button";
+        deleteBtn.className = "icon-button danger";
+        deleteBtn.textContent = "削除";
+        deleteBtn.addEventListener("click", () => deleteTask(task.id));
+        actions.append(editBtn, deleteBtn);
+
+        head.append(body, actions);
+        card.appendChild(head);
+        els.taskList.appendChild(card);
+      });
+    }
+
+    function startEdit(id) {
+      const task = state.tasks.find(item => item.id === id);
+      if (!task) return;
+      els.editingId.value = task.id;
+      els.workInput.value = task.work;
+      els.assigneeInput.value = task.assignee;
+      els.minutesInput.value = task.minutes;
+      els.memoInput.value = task.memo || "";
+      setSelectedHouses(task.houses);
+      els.saveTaskBtn.textContent = "タスクを更新";
+      els.cancelEditBtn.hidden = false;
+      updateSelectionSummary();
+      els.workInput.focus();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function deleteTask(id) {
+      if (!confirm("このタスクを削除しますか？")) return;
+      state.tasks = state.tasks.filter(task => task.id !== id);
+      normalizeBoardState();
+      saveState();
+      renderAll();
+    }
+
+    function clearForm() {
+      els.editingId.value = "";
+      els.taskForm.reset();
+      els.saveTaskBtn.textContent = "タスクを追加";
+      els.cancelEditBtn.hidden = true;
+      updateSelectionSummary();
+    }
+
+    // ボード状態はハウス単位。複数タスクが同じハウスに入る場合は、そのハウスの進捗として扱う。
+    function normalizeBoardState() {
+      const assigned = new Set(state.tasks.flatMap(task => task.houses));
+      Object.keys(state.board).forEach(no => {
+        if (!assigned.has(no)) delete state.board[no];
+      });
+      assigned.forEach(no => {
+        if (!state.board[no]) {
+          state.board[no] = { status: "not-started", updatedAt: null };
+        }
+      });
+    }
+
+    function renderSummary() {
+      const assigned = getAssignedHouses();
+      const counts = { done: 0, working: 0, "not-started": 0, late: 0 };
+      assigned.forEach(no => {
+        const item = state.board[no] || { status: "not-started" };
+        counts[item.status] += 1;
+        if (isHouseLate(no)) counts.late += 1;
+      });
+
+      const items = [
+        ["完了", counts.done],
+        ["作業中", counts.working],
+        ["未着手", counts["not-started"]],
+        ["遅れ", counts.late]
+      ];
+
+      els.summaryGrid.innerHTML = "";
+      items.forEach(([label, value]) => {
+        const box = document.createElement("div");
+        box.className = "summary-item";
+        const labelEl = document.createElement("div");
+        labelEl.className = "summary-label";
+        labelEl.textContent = label;
+        const valueEl = document.createElement("span");
+        valueEl.className = "summary-value";
+        valueEl.textContent = value;
+        box.append(labelEl, valueEl);
+        els.summaryGrid.appendChild(box);
+      });
+    }
+
+    function renderBoard() {
+      els.board.innerHTML = "";
+      const assigned = new Set(getAssignedHouses());
+
+      HOUSE_MASTER.forEach(area => {
+        const areaBox = document.createElement("div");
+        areaBox.className = "board-area";
+
+        const title = document.createElement("div");
+        title.className = "board-title";
+        const name = document.createElement("span");
+        name.textContent = area.area;
+        const count = document.createElement("span");
+        count.className = "board-count";
+        count.textContent = `${area.houses.filter(no => assigned.has(no)).length}/${area.houses.length}`;
+        title.append(name, count);
+
+        const grid = document.createElement("div");
+        grid.className = "house-grid";
+        area.houses.forEach(no => {
+          const status = state.board[no]?.status || "unassigned";
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `house-cell ${statusClass(status)}`;
+          button.disabled = !assigned.has(no);
+          button.setAttribute("aria-label", `ハウス${no} ${STATUS_LABEL[status]}`);
+          if (isHouseLate(no)) button.classList.add("is-late");
+          button.innerHTML = `<span class="house-no">${no}</span><span class="house-status">${STATUS_LABEL[status]}</span>`;
+          if (isHouseLate(no)) {
+            const late = document.createElement("span");
+            late.className = "late-mark";
+            late.textContent = "⚠";
+            button.appendChild(late);
+          }
+          button.addEventListener("click", () => toggleHouseStatus(no));
+          grid.appendChild(button);
+        });
+
+        areaBox.append(title, grid);
+        els.board.appendChild(areaBox);
+      });
+    }
+
+    function toggleHouseStatus(no) {
+      if (!state.board[no]) return;
+      const current = state.board[no].status || "not-started";
+      const next = STATUS_ORDER[(STATUS_ORDER.indexOf(current) + 1) % STATUS_ORDER.length];
+      state.board[no] = { status: next, updatedAt: Date.now() };
+      saveState();
+      renderSummary();
+      renderBoard();
+    }
+
+    // 遅れ判定はタスクごと。対象ハウスが完了でなければ、タスク追加時刻 + 目安時間を過ぎた時点で遅れ。
+    function isHouseLate(no) {
+      const boardItem = state.board[no];
+      if (!boardItem || boardItem.status === "done") return false;
+      const now = Date.now();
+      return state.tasks.some(task => (
+        task.houses.includes(no) &&
+        task.createdAt &&
+        now - task.createdAt > task.minutes * 60 * 1000
+      ));
+    }
+
+    function generateLineText() {
+      if (state.tasks.length === 0) return "本日の割当がまだありません。";
+      const grouped = new Map();
+      state.tasks.forEach(task => {
+        const key = task.assignee || "担当未定";
+        if (!grouped.has(key)) grouped.set(key, []);
+        grouped.get(key).push(task);
+      });
+
+      return [...grouped.entries()].map(([assignee, tasks]) => {
+        const lines = [`📋 本日の作業指示（${assignee}さん）`, ""];
+        tasks.forEach(task => {
+          lines.push(`■ ${task.work}：ハウス ${compressHouseList(task.houses)}`);
+          if (task.memo) lines.push(`　→ ${task.memo}`);
+          lines.push(`　⏱ 目安: ${formatMinutes(task.minutes, task.houses.length)}`);
+          lines.push("");
+        });
+        const firstHouse = tasks[0]?.houses?.[0] || "号数";
+        lines.push(`✅ 終わったら、このLINEに「${firstHouse} おわり」と返信してください`);
+        return lines.join("\n");
+      }).join("\n\n---\n\n");
+    }
+
+    async function copyLineText() {
+      if (!els.lineOutput.value.trim()) {
+        els.lineOutput.value = generateLineText();
+      }
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(els.lineOutput.value);
+        } else {
+          els.lineOutput.focus();
+          els.lineOutput.select();
+          document.execCommand("copy");
+          els.lineOutput.setSelectionRange(0, 0);
+        }
+        els.copyStatus.textContent = "コピーしました。LINEに貼り付けできます。";
+      } catch (error) {
+        console.warn("コピーに失敗しました", error);
+        els.copyStatus.textContent = "自動コピーできませんでした。テキストを選択してコピーしてください。";
+      }
+    }
+
+    function resetToday() {
+      if (!confirm("本日の割当と進捗をすべてクリアしますか？")) return;
+      state = { date: todayKey(), tasks: [], board: {} };
+      saveState();
+      clearForm();
+      els.lineOutput.value = "";
+      els.copyStatus.textContent = "";
+      renderAll();
+    }
+
+    function getAssignedHouses() {
+      return [...new Set(state.tasks.flatMap(task => task.houses))].sort(compareHouseNo);
+    }
+
+    function getSelectedHouses() {
+      return [...els.housePicker.querySelectorAll("input[name='houses']:checked")].map(input => input.value);
+    }
+
+    function setSelectedHouses(houses) {
+      const selected = new Set(houses);
+      els.housePicker.querySelectorAll("input[name='houses']").forEach(input => {
+        input.checked = selected.has(input.value);
+      });
+    }
+
+    function updateSelectionSummary() {
+      const selected = getSelectedHouses().sort(compareHouseNo);
+      els.selectionSummary.textContent = selected.length === 0
+        ? "0棟選択中"
+        : `${selected.length}棟選択中: ${compressHouseList(selected)}`;
+    }
+
+    function compressHouseList(houses) {
+      const nums = [...new Set(houses)].map(no => Number(no)).sort((a, b) => a - b);
+      if (nums.length === 0) return "";
+      const ranges = [];
+      let start = nums[0];
+      let prev = nums[0];
+      for (let i = 1; i <= nums.length; i += 1) {
+        const current = nums[i];
+        if (current === prev + 1) {
+          prev = current;
+          continue;
+        }
+        ranges.push(start === prev ? padHouse(start) : `${padHouse(start)}〜${padHouse(prev)}`);
+        start = current;
+        prev = current;
+      }
+      return ranges.join(", ");
+    }
+
+    function formatMinutes(minutes, houseCount) {
+      if (houseCount > 1) {
+        return `1棟あたり${minutes}分（合計${minutes * houseCount}分）`;
+      }
+      return `${minutes}分`;
+    }
+
+    function statusClass(status) {
+      if (status === "working") return "status-working";
+      if (status === "done") return "status-done";
+      return "";
+    }
+
+    function compareHouseNo(a, b) {
+      return Number(a) - Number(b);
+    }
+
+    function padHouse(no) {
+      return String(no).padStart(3, "0");
+    }
+
+    function todayKey() {
+      const now = new Date();
+      const yyyy = now.getFullYear();
+      const mm = String(now.getMonth() + 1).padStart(2, "0");
+      const dd = String(now.getDate()).padStart(2, "0");
+      return `${yyyy}-${mm}-${dd}`;
+    }
+
+    function formatToday() {
+      const now = new Date();
+      return now.toLocaleDateString("ja-JP", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        weekday: "short"
+      });
+    }
+  </script>
+</body>
+</html>
