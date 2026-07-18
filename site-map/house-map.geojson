@@ -1,0 +1,1897 @@
+{
+ "type": "FeatureCollection",
+ "name": "kiritani-houses",
+ "note": "号数01-63は北から通し採番・2桁表記（2026-07-19確定、未設置3含む）。棟軸ラインは農場主作図（WGS84、精度±2m）。old_no=旧号数(2026-07-06版)",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "01",
+    "area": "公民館",
+    "status": "稼働",
+    "old_no": "036",
+    "length_m": 75.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 450,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.224768,
+     36.231676
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.225097,
+      36.231885
+     ],
+     [
+      137.22444,
+      36.231467
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "02",
+    "area": "公民館",
+    "status": "稼働",
+    "old_no": "037",
+    "length_m": 71.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 426,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.224814,
+     36.231627
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.225124,
+      36.231826
+     ],
+     [
+      137.224505,
+      36.231427
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "03",
+    "area": "公民館",
+    "status": "稼働",
+    "old_no": "038",
+    "length_m": 57.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 342,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.224903,
+     36.231614
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.225152,
+      36.231773
+     ],
+     [
+      137.224654,
+      36.231456
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "04",
+    "area": "公民館",
+    "status": "稼働",
+    "old_no": "039",
+    "length_m": 42.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 252,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22499,
+     36.231592
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.225174,
+      36.231709
+     ],
+     [
+      137.224805,
+      36.231475
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "05",
+    "area": "工場前",
+    "status": "稼働",
+    "old_no": "001",
+    "length_m": 47.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 282,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22704,
+     36.230372
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22687,
+      36.230532
+     ],
+     [
+      137.227211,
+      36.230211
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "06",
+    "area": "工場前",
+    "status": "稼働",
+    "old_no": "002",
+    "length_m": 44.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 264,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.226987,
+     36.230322
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.226828,
+      36.230475
+     ],
+     [
+      137.227146,
+      36.23017
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "07",
+    "area": "工場前",
+    "status": "稼働",
+    "old_no": "003",
+    "length_m": 33.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 198,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.226936,
+     36.23023
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.226817,
+      36.230342
+     ],
+     [
+      137.227055,
+      36.230119
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "08",
+    "area": "工場前",
+    "status": "未設置",
+    "old_no": "(新規・旧004枠?)",
+    "length_m": 32.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 192,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.226887,
+     36.230178
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.226763,
+      36.230281
+     ],
+     [
+      137.227011,
+      36.230074
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "09",
+    "area": "梅花",
+    "status": "稼働",
+    "old_no": "005",
+    "length_m": 58.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 348,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.227716,
+     36.230019
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227503,
+      36.230215
+     ],
+     [
+      137.227929,
+      36.229823
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "10",
+    "area": "梅花",
+    "status": "稼働",
+    "old_no": "006",
+    "length_m": 61.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 366,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.227653,
+     36.229947
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227425,
+      36.230151
+     ],
+     [
+      137.227881,
+      36.229744
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "11",
+    "area": "梅花",
+    "status": "稼働",
+    "old_no": "007",
+    "length_m": 62.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 372,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.227575,
+     36.229891
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227344,
+      36.230097
+     ],
+     [
+      137.227806,
+      36.229685
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "12",
+    "area": "梅花",
+    "status": "稼働",
+    "old_no": "008",
+    "length_m": 64.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 384,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.227515,
+     36.229838
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227281,
+      36.230054
+     ],
+     [
+      137.227749,
+      36.229622
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "13",
+    "area": "梅花",
+    "status": "稼働",
+    "old_no": "009",
+    "length_m": 69.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 414,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.227423,
+     36.229706
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227166,
+      36.229939
+     ],
+     [
+      137.22768,
+      36.229474
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "14",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "010",
+    "length_m": 27.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 162,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228562,
+     36.230052
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228427,
+      36.230102
+     ],
+     [
+      137.228698,
+      36.230001
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "15",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "011",
+    "length_m": 32.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 192,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228476,
+     36.230006
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228313,
+      36.230065
+     ],
+     [
+      137.228639,
+      36.229947
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "16",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "012",
+    "length_m": 38.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 228,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228417,
+     36.229963
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228226,
+      36.230036
+     ],
+     [
+      137.228608,
+      36.229891
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "17",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "013",
+    "length_m": 34.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 204,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228386,
+     36.229906
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228216,
+      36.229968
+     ],
+     [
+      137.228557,
+      36.229843
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "18",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "014",
+    "length_m": 34.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 204,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228373,
+     36.229839
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228201,
+      36.229897
+     ],
+     [
+      137.228545,
+      36.22978
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "19",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "015",
+    "length_m": 29.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 174,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228341,
+     36.229781
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228192,
+      36.229833
+     ],
+     [
+      137.22849,
+      36.229728
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "20",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "016",
+    "length_m": 27.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 162,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228325,
+     36.229716
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228187,
+      36.229761
+     ],
+     [
+      137.228462,
+      36.229671
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "21",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "017",
+    "length_m": 25.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 150,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228301,
+     36.229661
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228173,
+      36.229704
+     ],
+     [
+      137.22843,
+      36.229617
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "22",
+    "area": "おぞれ",
+    "status": "稼働",
+    "old_no": "018",
+    "length_m": 20.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 120,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228289,
+     36.229597
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228185,
+      36.229635
+     ],
+     [
+      137.228392,
+      36.22956
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "23",
+    "area": "高野",
+    "status": "未設置",
+    "old_no": "(新規)",
+    "length_m": 27.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 162,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228674,
+     36.229338
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228564,
+      36.229422
+     ],
+     [
+      137.228783,
+      36.229255
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "24",
+    "area": "高野",
+    "status": "未設置",
+    "old_no": "(新規)",
+    "length_m": 33.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 198,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228636,
+     36.229276
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228506,
+      36.229381
+     ],
+     [
+      137.228766,
+      36.229171
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "25",
+    "area": "上野西",
+    "status": "稼働",
+    "old_no": "019",
+    "length_m": 58.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 348,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228296,
+     36.229274
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228068,
+      36.229459
+     ],
+     [
+      137.228525,
+      36.229089
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "26",
+    "area": "上野西",
+    "status": "稼働",
+    "old_no": "020",
+    "length_m": 69.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 414,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22829,
+     36.229184
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228021,
+      36.229405
+     ],
+     [
+      137.22856,
+      36.228963
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "27",
+    "area": "上野西",
+    "status": "稼働",
+    "old_no": "021",
+    "length_m": 70.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 420,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228208,
+     36.229089
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.227936,
+      36.229317
+     ],
+     [
+      137.228479,
+      36.228861
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "28",
+    "area": "上野西",
+    "status": "稼働",
+    "old_no": "022",
+    "length_m": 55.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 330,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228206,
+     36.228986
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22799,
+      36.229163
+     ],
+     [
+      137.228422,
+      36.228809
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "29",
+    "area": "上野東",
+    "status": "稼働",
+    "old_no": "023",
+    "length_m": 12.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 72,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228762,
+     36.228866
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228707,
+      36.228893
+     ],
+     [
+      137.228817,
+      36.228839
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "30",
+    "area": "上野東",
+    "status": "稼働",
+    "old_no": "024",
+    "length_m": 22.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 132,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22877,
+     36.228793
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228669,
+      36.228845
+     ],
+     [
+      137.228871,
+      36.22874
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "31",
+    "area": "上野東",
+    "status": "稼働",
+    "old_no": "025",
+    "length_m": 37.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 222,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228812,
+     36.2287
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228638,
+      36.228792
+     ],
+     [
+      137.228986,
+      36.228608
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "32",
+    "area": "上野東",
+    "status": "稼働",
+    "old_no": "026",
+    "length_m": 40.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 240,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228792,
+     36.228644
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228608,
+      36.228744
+     ],
+     [
+      137.228976,
+      36.228545
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "33",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "027",
+    "length_m": 17.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 102,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22849,
+     36.228588
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228436,
+      36.228527
+     ],
+     [
+      137.228544,
+      36.22865
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "34",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "028",
+    "length_m": 18.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 108,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228555,
+     36.228557
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.2285,
+      36.228491
+     ],
+     [
+      137.22861,
+      36.228622
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "35",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "029",
+    "length_m": 18.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 108,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228609,
+     36.228523
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228549,
+      36.228458
+     ],
+     [
+      137.228669,
+      36.228588
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "36",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "030",
+    "length_m": 19.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 114,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228666,
+     36.228489
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228601,
+      36.228421
+     ],
+     [
+      137.22873,
+      36.228556
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "37",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "031",
+    "length_m": 20.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 120,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228719,
+     36.228445
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22865,
+      36.228371
+     ],
+     [
+      137.228787,
+      36.228518
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "38",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "032",
+    "length_m": 22.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 132,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228787,
+     36.22839
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22869,
+      36.228328
+     ],
+     [
+      137.228884,
+      36.228452
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "39",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "033",
+    "length_m": 17.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 102,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228805,
+     36.228275
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228711,
+      36.22827
+     ],
+     [
+      137.228898,
+      36.22828
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "40",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "034",
+    "length_m": 16.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 96,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228803,
+     36.228216
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228715,
+      36.228216
+     ],
+     [
+      137.228892,
+      36.228216
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "41",
+    "area": "宮枚",
+    "status": "稼働",
+    "old_no": "035",
+    "length_m": 15.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 90,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228811,
+     36.22816
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228727,
+      36.228159
+     ],
+     [
+      137.228894,
+      36.228161
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "42",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "040",
+    "length_m": 20.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 120,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228961,
+     36.225601
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228852,
+      36.225606
+     ],
+     [
+      137.22907,
+      36.225595
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "43",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "041",
+    "length_m": 24.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 144,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.228997,
+     36.225537
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228865,
+      36.225547
+     ],
+     [
+      137.22913,
+      36.225527
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "44",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "042",
+    "length_m": 27.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 162,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229027,
+     36.225481
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228875,
+      36.22549
+     ],
+     [
+      137.229179,
+      36.225471
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "45",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "043",
+    "length_m": 30.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 180,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229075,
+     36.225418
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228907,
+      36.22543
+     ],
+     [
+      137.229242,
+      36.225407
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "46",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "044",
+    "length_m": 31.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 186,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229093,
+     36.225365
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228921,
+      36.225375
+     ],
+     [
+      137.229266,
+      36.225356
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "47",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "045",
+    "length_m": 33.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 198,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229127,
+     36.225306
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228945,
+      36.225314
+     ],
+     [
+      137.229309,
+      36.225297
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "48",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "046",
+    "length_m": 35.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 210,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229148,
+     36.225252
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228956,
+      36.225264
+     ],
+     [
+      137.22934,
+      36.225239
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "49",
+    "area": "垣内上",
+    "status": "稼働",
+    "old_no": "047",
+    "length_m": 35.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 210,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229165,
+     36.225194
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.228971,
+      36.225205
+     ],
+     [
+      137.22936,
+      36.225183
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "50",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "048",
+    "length_m": 36.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 216,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229206,
+     36.225107
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229004,
+      36.22512
+     ],
+     [
+      137.229407,
+      36.225094
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "51",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "049",
+    "length_m": 37.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 222,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229215,
+     36.22505
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229009,
+      36.225066
+     ],
+     [
+      137.229422,
+      36.225035
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "52",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "050",
+    "length_m": 37.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 222,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229212,
+     36.224998
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229006,
+      36.225013
+     ],
+     [
+      137.229419,
+      36.224982
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "53",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "051",
+    "length_m": 35.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 210,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229218,
+     36.224944
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229025,
+      36.22496
+     ],
+     [
+      137.22941,
+      36.224928
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "54",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "052",
+    "length_m": 33.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 198,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229229,
+     36.224884
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229048,
+      36.224895
+     ],
+     [
+      137.229411,
+      36.224873
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "55",
+    "area": "垣内中",
+    "status": "稼働",
+    "old_no": "053",
+    "length_m": 33.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 198,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229234,
+     36.224823
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229053,
+      36.224837
+     ],
+     [
+      137.229416,
+      36.224809
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "56",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "054",
+    "length_m": 29.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 174,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229242,
+     36.224716
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22908,
+      36.224731
+     ],
+     [
+      137.229404,
+      36.2247
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "57",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "055",
+    "length_m": 30.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 180,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229254,
+     36.224644
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229087,
+      36.224657
+     ],
+     [
+      137.22942,
+      36.224632
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "58",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "056",
+    "length_m": 25.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 150,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229255,
+     36.224536
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229117,
+      36.224547
+     ],
+     [
+      137.229394,
+      36.224526
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "59",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "057",
+    "length_m": 29.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 174,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229274,
+     36.224462
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229115,
+      36.224474
+     ],
+     [
+      137.229433,
+      36.22445
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "60",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "058",
+    "length_m": 30.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 180,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229281,
+     36.224364
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229114,
+      36.22438
+     ],
+     [
+      137.229448,
+      36.224348
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "61",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "059",
+    "length_m": 35.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 210,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.22931,
+     36.224285
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229118,
+      36.224295
+     ],
+     [
+      137.229503,
+      36.224275
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "62",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "060",
+    "length_m": 44.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 264,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229283,
+     36.224177
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.229036,
+      36.224189
+     ],
+     [
+      137.22953,
+      36.224165
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "no": "63",
+    "area": "垣内下",
+    "status": "稼働",
+    "old_no": "061",
+    "length_m": 45.0,
+    "width_m_est": 6.0,
+    "floor_area_m2_est": 270,
+    "source": "農場主による作図 2026-07-19",
+    "center": [
+     137.229279,
+     36.224108
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      137.22903,
+      36.224122
+     ],
+     [
+      137.229528,
+      36.224093
+     ]
+    ]
+   }
+  }
+ ]
+}
