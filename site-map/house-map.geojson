@@ -1,15 +1,16 @@
 {
  "type": "FeatureCollection",
  "name": "kiritani-houses",
- "note": "号数01-63は北から通し採番・2桁表記（2026-07-19確定、未設置3含む）。棟軸ラインは農場主作図（WGS84、精度±2m）。old_no=旧号数(2026-07-06版)",
+ "note": "号数=エリア記号+エリア内連番（2026-07-19確定）。KO=公民館 KB=工場前 BA=梅花 OZ=おぞれ TN=高野 UW=上野西 UE=上野東 KM=宮枚 KT=垣内。番号は各エリア北端から。棟軸ラインは農場主作図（WGS84、精度±2m）。seq_ns=北から通し番号(旧)、old_no_2026_07_06=初版号数",
  "features": [
   {
    "type": "Feature",
    "properties": {
-    "no": "01",
+    "no": "KO01",
     "area": "公民館",
     "status": "稼働",
-    "old_no": "036",
+    "seq_ns": "01",
+    "old_no_2026_07_06": "036",
     "length_m": 75.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 450,
@@ -36,10 +37,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "02",
+    "no": "KO02",
     "area": "公民館",
     "status": "稼働",
-    "old_no": "037",
+    "seq_ns": "02",
+    "old_no_2026_07_06": "037",
     "length_m": 71.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 426,
@@ -66,10 +68,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "03",
+    "no": "KO03",
     "area": "公民館",
     "status": "稼働",
-    "old_no": "038",
+    "seq_ns": "03",
+    "old_no_2026_07_06": "038",
     "length_m": 57.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 342,
@@ -96,10 +99,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "04",
+    "no": "KO04",
     "area": "公民館",
     "status": "稼働",
-    "old_no": "039",
+    "seq_ns": "04",
+    "old_no_2026_07_06": "039",
     "length_m": 42.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 252,
@@ -126,10 +130,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "05",
+    "no": "KB01",
     "area": "工場前",
     "status": "稼働",
-    "old_no": "001",
+    "seq_ns": "05",
+    "old_no_2026_07_06": "001",
     "length_m": 47.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 282,
@@ -156,10 +161,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "06",
+    "no": "KB02",
     "area": "工場前",
     "status": "稼働",
-    "old_no": "002",
+    "seq_ns": "06",
+    "old_no_2026_07_06": "002",
     "length_m": 44.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 264,
@@ -186,10 +192,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "07",
+    "no": "KB03",
     "area": "工場前",
     "status": "稼働",
-    "old_no": "003",
+    "seq_ns": "07",
+    "old_no_2026_07_06": "003",
     "length_m": 33.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 198,
@@ -216,10 +223,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "08",
+    "no": "KB04",
     "area": "工場前",
     "status": "未設置",
-    "old_no": "(新規・旧004枠?)",
+    "seq_ns": "08",
+    "old_no_2026_07_06": "(新規・旧004枠?)",
     "length_m": 32.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 192,
@@ -246,10 +254,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "09",
+    "no": "BA01",
     "area": "梅花",
     "status": "稼働",
-    "old_no": "005",
+    "seq_ns": "09",
+    "old_no_2026_07_06": "005",
     "length_m": 58.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 348,
@@ -276,10 +285,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "10",
+    "no": "BA02",
     "area": "梅花",
     "status": "稼働",
-    "old_no": "006",
+    "seq_ns": "10",
+    "old_no_2026_07_06": "006",
     "length_m": 61.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 366,
@@ -306,10 +316,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "11",
+    "no": "BA03",
     "area": "梅花",
     "status": "稼働",
-    "old_no": "007",
+    "seq_ns": "11",
+    "old_no_2026_07_06": "007",
     "length_m": 62.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 372,
@@ -336,10 +347,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "12",
+    "no": "BA04",
     "area": "梅花",
     "status": "稼働",
-    "old_no": "008",
+    "seq_ns": "12",
+    "old_no_2026_07_06": "008",
     "length_m": 64.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 384,
@@ -366,10 +378,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "13",
+    "no": "BA05",
     "area": "梅花",
     "status": "稼働",
-    "old_no": "009",
+    "seq_ns": "13",
+    "old_no_2026_07_06": "009",
     "length_m": 69.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 414,
@@ -396,10 +409,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "14",
+    "no": "OZ01",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "010",
+    "seq_ns": "14",
+    "old_no_2026_07_06": "010",
     "length_m": 27.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 162,
@@ -426,10 +440,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "15",
+    "no": "OZ02",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "011",
+    "seq_ns": "15",
+    "old_no_2026_07_06": "011",
     "length_m": 32.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 192,
@@ -456,10 +471,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "16",
+    "no": "OZ03",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "012",
+    "seq_ns": "16",
+    "old_no_2026_07_06": "012",
     "length_m": 38.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 228,
@@ -486,10 +502,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "17",
+    "no": "OZ04",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "013",
+    "seq_ns": "17",
+    "old_no_2026_07_06": "013",
     "length_m": 34.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 204,
@@ -516,10 +533,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "18",
+    "no": "OZ05",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "014",
+    "seq_ns": "18",
+    "old_no_2026_07_06": "014",
     "length_m": 34.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 204,
@@ -546,10 +564,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "19",
+    "no": "OZ06",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "015",
+    "seq_ns": "19",
+    "old_no_2026_07_06": "015",
     "length_m": 29.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 174,
@@ -576,10 +595,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "20",
+    "no": "OZ07",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "016",
+    "seq_ns": "20",
+    "old_no_2026_07_06": "016",
     "length_m": 27.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 162,
@@ -606,10 +626,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "21",
+    "no": "OZ08",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "017",
+    "seq_ns": "21",
+    "old_no_2026_07_06": "017",
     "length_m": 25.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 150,
@@ -636,10 +657,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "22",
+    "no": "OZ09",
     "area": "おぞれ",
     "status": "稼働",
-    "old_no": "018",
+    "seq_ns": "22",
+    "old_no_2026_07_06": "018",
     "length_m": 20.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 120,
@@ -666,10 +688,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "23",
+    "no": "TN01",
     "area": "高野",
     "status": "未設置",
-    "old_no": "(新規)",
+    "seq_ns": "23",
+    "old_no_2026_07_06": "(新規)",
     "length_m": 27.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 162,
@@ -696,10 +719,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "24",
+    "no": "TN02",
     "area": "高野",
     "status": "未設置",
-    "old_no": "(新規)",
+    "seq_ns": "24",
+    "old_no_2026_07_06": "(新規)",
     "length_m": 33.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 198,
@@ -726,10 +750,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "25",
+    "no": "UW01",
     "area": "上野西",
     "status": "稼働",
-    "old_no": "019",
+    "seq_ns": "25",
+    "old_no_2026_07_06": "019",
     "length_m": 58.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 348,
@@ -756,10 +781,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "26",
+    "no": "UW02",
     "area": "上野西",
     "status": "稼働",
-    "old_no": "020",
+    "seq_ns": "26",
+    "old_no_2026_07_06": "020",
     "length_m": 69.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 414,
@@ -786,10 +812,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "27",
+    "no": "UW03",
     "area": "上野西",
     "status": "稼働",
-    "old_no": "021",
+    "seq_ns": "27",
+    "old_no_2026_07_06": "021",
     "length_m": 70.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 420,
@@ -816,10 +843,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "28",
+    "no": "UW04",
     "area": "上野西",
     "status": "稼働",
-    "old_no": "022",
+    "seq_ns": "28",
+    "old_no_2026_07_06": "022",
     "length_m": 55.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 330,
@@ -846,10 +874,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "29",
+    "no": "UE01",
     "area": "上野東",
     "status": "稼働",
-    "old_no": "023",
+    "seq_ns": "29",
+    "old_no_2026_07_06": "023",
     "length_m": 12.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 72,
@@ -876,10 +905,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "30",
+    "no": "UE02",
     "area": "上野東",
     "status": "稼働",
-    "old_no": "024",
+    "seq_ns": "30",
+    "old_no_2026_07_06": "024",
     "length_m": 22.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 132,
@@ -906,10 +936,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "31",
+    "no": "UE03",
     "area": "上野東",
     "status": "稼働",
-    "old_no": "025",
+    "seq_ns": "31",
+    "old_no_2026_07_06": "025",
     "length_m": 37.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 222,
@@ -936,10 +967,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "32",
+    "no": "UE04",
     "area": "上野東",
     "status": "稼働",
-    "old_no": "026",
+    "seq_ns": "32",
+    "old_no_2026_07_06": "026",
     "length_m": 40.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 240,
@@ -966,10 +998,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "33",
+    "no": "KM01",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "027",
+    "seq_ns": "33",
+    "old_no_2026_07_06": "027",
     "length_m": 17.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 102,
@@ -996,10 +1029,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "34",
+    "no": "KM02",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "028",
+    "seq_ns": "34",
+    "old_no_2026_07_06": "028",
     "length_m": 18.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 108,
@@ -1026,10 +1060,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "35",
+    "no": "KM03",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "029",
+    "seq_ns": "35",
+    "old_no_2026_07_06": "029",
     "length_m": 18.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 108,
@@ -1056,10 +1091,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "36",
+    "no": "KM04",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "030",
+    "seq_ns": "36",
+    "old_no_2026_07_06": "030",
     "length_m": 19.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 114,
@@ -1086,10 +1122,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "37",
+    "no": "KM05",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "031",
+    "seq_ns": "37",
+    "old_no_2026_07_06": "031",
     "length_m": 20.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 120,
@@ -1116,10 +1153,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "38",
+    "no": "KM06",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "032",
+    "seq_ns": "38",
+    "old_no_2026_07_06": "032",
     "length_m": 22.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 132,
@@ -1146,10 +1184,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "39",
+    "no": "KM07",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "033",
+    "seq_ns": "39",
+    "old_no_2026_07_06": "033",
     "length_m": 17.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 102,
@@ -1176,10 +1215,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "40",
+    "no": "KM08",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "034",
+    "seq_ns": "40",
+    "old_no_2026_07_06": "034",
     "length_m": 16.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 96,
@@ -1206,10 +1246,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "41",
+    "no": "KM09",
     "area": "宮枚",
     "status": "稼働",
-    "old_no": "035",
+    "seq_ns": "41",
+    "old_no_2026_07_06": "035",
     "length_m": 15.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 90,
@@ -1236,10 +1277,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "42",
+    "no": "KT01",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "040",
+    "seq_ns": "42",
+    "old_no_2026_07_06": "040",
     "length_m": 20.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 120,
@@ -1266,10 +1308,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "43",
+    "no": "KT02",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "041",
+    "seq_ns": "43",
+    "old_no_2026_07_06": "041",
     "length_m": 24.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 144,
@@ -1296,10 +1339,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "44",
+    "no": "KT03",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "042",
+    "seq_ns": "44",
+    "old_no_2026_07_06": "042",
     "length_m": 27.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 162,
@@ -1326,10 +1370,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "45",
+    "no": "KT04",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "043",
+    "seq_ns": "45",
+    "old_no_2026_07_06": "043",
     "length_m": 30.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 180,
@@ -1356,10 +1401,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "46",
+    "no": "KT05",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "044",
+    "seq_ns": "46",
+    "old_no_2026_07_06": "044",
     "length_m": 31.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 186,
@@ -1386,10 +1432,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "47",
+    "no": "KT06",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "045",
+    "seq_ns": "47",
+    "old_no_2026_07_06": "045",
     "length_m": 33.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 198,
@@ -1416,10 +1463,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "48",
+    "no": "KT07",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "046",
+    "seq_ns": "48",
+    "old_no_2026_07_06": "046",
     "length_m": 35.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 210,
@@ -1446,10 +1494,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "49",
+    "no": "KT08",
     "area": "垣内上",
     "status": "稼働",
-    "old_no": "047",
+    "seq_ns": "49",
+    "old_no_2026_07_06": "047",
     "length_m": 35.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 210,
@@ -1476,10 +1525,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "50",
+    "no": "KT09",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "048",
+    "seq_ns": "50",
+    "old_no_2026_07_06": "048",
     "length_m": 36.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 216,
@@ -1506,10 +1556,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "51",
+    "no": "KT10",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "049",
+    "seq_ns": "51",
+    "old_no_2026_07_06": "049",
     "length_m": 37.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 222,
@@ -1536,10 +1587,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "52",
+    "no": "KT11",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "050",
+    "seq_ns": "52",
+    "old_no_2026_07_06": "050",
     "length_m": 37.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 222,
@@ -1566,10 +1618,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "53",
+    "no": "KT12",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "051",
+    "seq_ns": "53",
+    "old_no_2026_07_06": "051",
     "length_m": 35.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 210,
@@ -1596,10 +1649,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "54",
+    "no": "KT13",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "052",
+    "seq_ns": "54",
+    "old_no_2026_07_06": "052",
     "length_m": 33.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 198,
@@ -1626,10 +1680,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "55",
+    "no": "KT14",
     "area": "垣内中",
     "status": "稼働",
-    "old_no": "053",
+    "seq_ns": "55",
+    "old_no_2026_07_06": "053",
     "length_m": 33.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 198,
@@ -1656,10 +1711,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "56",
+    "no": "KT15",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "054",
+    "seq_ns": "56",
+    "old_no_2026_07_06": "054",
     "length_m": 29.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 174,
@@ -1686,10 +1742,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "57",
+    "no": "KT16",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "055",
+    "seq_ns": "57",
+    "old_no_2026_07_06": "055",
     "length_m": 30.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 180,
@@ -1716,10 +1773,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "58",
+    "no": "KT17",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "056",
+    "seq_ns": "58",
+    "old_no_2026_07_06": "056",
     "length_m": 25.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 150,
@@ -1746,10 +1804,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "59",
+    "no": "KT18",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "057",
+    "seq_ns": "59",
+    "old_no_2026_07_06": "057",
     "length_m": 29.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 174,
@@ -1776,10 +1835,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "60",
+    "no": "KT19",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "058",
+    "seq_ns": "60",
+    "old_no_2026_07_06": "058",
     "length_m": 30.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 180,
@@ -1806,10 +1866,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "61",
+    "no": "KT20",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "059",
+    "seq_ns": "61",
+    "old_no_2026_07_06": "059",
     "length_m": 35.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 210,
@@ -1836,10 +1897,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "62",
+    "no": "KT21",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "060",
+    "seq_ns": "62",
+    "old_no_2026_07_06": "060",
     "length_m": 44.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 264,
@@ -1866,10 +1928,11 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "63",
+    "no": "KT22",
     "area": "垣内下",
     "status": "稼働",
-    "old_no": "061",
+    "seq_ns": "63",
+    "old_no_2026_07_06": "061",
     "length_m": 45.0,
     "width_m_est": 6.0,
     "floor_area_m2_est": 270,
