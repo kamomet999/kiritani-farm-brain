@@ -22,7 +22,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | KO | 公民館 | Kominkan | | KJ | 工場前 | Kojo-mae | | BA | 梅花 | Baika |
 | OZ | おぞれ | Ozore | | TA | 高野 | Takano | | UW | 上野西 | Ueno-West |
-| UE | 上野東 | Ueno-East | | MI | 宮枚 | Miyahira | | KA | 垣内 | Kakiuchi |
+| UE | 上野東 | Ueno-East | | MI | 宮枚 | Miyahira | | KA | 垣内 | Kato（かとう） |
 
 | 号数 | エリア | 状態 | 中心緯度 | 中心経度 | 長さ(m) | 端1(緯度,経度) | 端2(緯度,経度) | 内部番号 | 初版号数(旧) |
 |---|---|---|---|---|---|---|---|---|---|
