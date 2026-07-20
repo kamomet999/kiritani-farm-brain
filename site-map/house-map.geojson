@@ -1,7 +1,7 @@
 {
  "type": "FeatureCollection",
  "name": "kiritani-houses",
- "note": "号数=エリア記号+エリア内連番（2026-07-19確定）。KO=公民館 KJ=工場前 BA=梅花 OZ=おぞれ TA=高野 UN=上野西 UH=上野東 MI=宮枚 KA=垣内。命名規則: エリア名ローマ字の頭2文字（頭文字重複時は2文字目で区別、上野は西/東の頭文字）。番号は各エリア北端から。internal_no=内部番号（北から通し01-63）。棟軸ラインは農場主作図（WGS84、精度±2m）",
+ "note": "号数=エリア記号+エリア内連番（2026-07-19確定）。KO=公民館 KJ=工場前 BA=梅花 OZ=おぞれ TA=高野 UW=上野西(West) UE=上野東(East) MI=宮枚 KA=垣内。命名規則: エリア名ローマ字の頭2文字（頭文字重複時は2文字目で区別、上野は西=W/東=E）。番号は各エリア北端から。internal_no=内部番号（北から通し01-63）。棟軸ラインは農場主作図（WGS84、精度±2m）",
  "features": [
   {
    "type": "Feature",
@@ -750,7 +750,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UN01",
+    "no": "UW01",
     "area": "上野西",
     "status": "稼働",
     "internal_no": "25",
@@ -781,7 +781,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UN02",
+    "no": "UW02",
     "area": "上野西",
     "status": "稼働",
     "internal_no": "26",
@@ -812,7 +812,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UN03",
+    "no": "UW03",
     "area": "上野西",
     "status": "稼働",
     "internal_no": "27",
@@ -843,7 +843,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UN04",
+    "no": "UW04",
     "area": "上野西",
     "status": "稼働",
     "internal_no": "28",
@@ -874,7 +874,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UH01",
+    "no": "UE01",
     "area": "上野東",
     "status": "稼働",
     "internal_no": "29",
@@ -905,7 +905,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UH02",
+    "no": "UE02",
     "area": "上野東",
     "status": "稼働",
     "internal_no": "30",
@@ -936,7 +936,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UH03",
+    "no": "UE03",
     "area": "上野東",
     "status": "稼働",
     "internal_no": "31",
@@ -967,7 +967,7 @@
   {
    "type": "Feature",
    "properties": {
-    "no": "UH04",
+    "no": "UE04",
     "area": "上野東",
     "status": "稼働",
     "internal_no": "32",

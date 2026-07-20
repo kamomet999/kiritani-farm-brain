@@ -7,11 +7,11 @@
 - 地図画像（名前入り・方角つき）: [house-map-named.png](house-map-named.png)（北が上）
 - ベース航空写真（国土地理院・注記なし）: [aerial.png](aerial.png)
 - 公民館座標: 36.231611, 137.224879
-- 号数入り座標マップ（農場主作図・確定）: [house-map-coordinates.jpg](house-map-coordinates.jpg)（北側 KO/KJ/BA/OZ/TA/UN/UH/MI）／ [house-map-coordinates-kakiuchi.jpg](house-map-coordinates-kakiuchi.jpg)（垣内 KA01–22）
+- 号数入り座標マップ（農場主作図・確定）: [house-map-coordinates.jpg](house-map-coordinates.jpg)（北側 KO/KJ/BA/OZ/TA/UW/UE/MI）／ [house-map-coordinates-kakiuchi.jpg](house-map-coordinates-kakiuchi.jpg)（垣内 KA01–22）
 - 全棟の緯度経度一覧: [house-coordinates.md](house-coordinates.md) ／ GISデータ: [house-map.geojson](house-map.geojson)
 
 > **2026-07-19 採番改定（第2版）**: 号数を**エリア記号＋エリア内連番**に改定（番号は各エリア北端から）。
-> 記号: KO=公民館 KJ=工場前 BA=梅花 OZ=おぞれ TA=高野 UN=上野西 UH=上野東 MI=宮枚 KA=垣内。
+> 記号: KO=公民館 KJ=工場前 BA=梅花 OZ=おぞれ TA=高野 UW=上野西 UE=上野東 MI=宮枚 KA=垣内。
 > **全63番・稼働60棟・未設置3（KJ04, TA01, TA02）**。
 > 旧号数（通し01–63版・初版001–061版）との対応は [house-coordinates.md](house-coordinates.md) を参照。
 > 全て**ハウス（露地畑は無し）**。ベースは国土地理院航空写真（撮影時期はGoogleと異なる）。
@@ -27,8 +27,8 @@
 | 梅花 | BA01–BA05 | 5 |  |  |  |  |
 | おぞれ | OZ01–OZ09 | 9 |  |  |  | **右 / 左**に分かれる |
 | 高野 | TA01–TA02 | 0 |  |  |  | 未設置。おぞれ南西・上野東の北 |
-| 上野西 | UN01–UN04 | 4 |  |  |  |  |
-| 上野東 | UH01–UH04 | 4 |  |  |  |  |
+| 上野西 | UW01–UW04 | 4 |  |  |  |  |
+| 上野東 | UE01–UE04 | 4 |  |  |  |  |
 | 宮枚 | MI01–MI09 | 9 |  |  |  |  |
 | 垣内上 | KA01–KA08 | 8 |  |  |  |  |
 | 垣内中 | KA09–KA14 | 6 |  |  |  |  |
@@ -45,8 +45,8 @@
  ├ 梅花   BA (01–05)
  ├ おぞれ OZ (01–09)  右/左
  ├ 高野   TA (01–02)  未設置
- ├ 上野西 UN (01–04)
- ├ 上野東 UH (01–04)
+ ├ 上野西 UW (01–04)
+ ├ 上野東 UE (01–04)
  └ 宮枚   MI (01–09)
  │
  │（森・畑で分断・南へ）
